@@ -1,4 +1,4 @@
-#Getting Started
+# Getting Started
 
 We want you to avoid tutorial hell and jump into building projects from day one. If you don’t know something as you move along, do a quick google search or ask in our discord channel.
 
@@ -18,7 +18,7 @@ A good rule of thumb is not to trust anyone in the MetaVerse, impersonation is a
 ## Prerequisites
 ***
 
-**Wallets **
+**Wallets**
 
 To get started you will need a wallet. Your wallet will act as your login to access the Ethereum network. Your public key is like your username and your private key is like your password. 
 
@@ -31,6 +31,7 @@ Next you will need send your self some fake Ether via what’s known as a faucet
 - MyCrypto: https://app.mycrypto.com/faucet
 - Rinkeby: https://faucet.rinkeby.io
 - MetaMask: https://faucet.metamask.io
+- Chainlink: https://faucets.chain.link/rinkeby
 - You can ask us in the discord if you run out of fake Ether.
 
 **Solidity** 
@@ -44,7 +45,7 @@ Here’s a cheat sheet to speed up your learning:
 
 **JavaScript** 
 
-You’ll need to have an intermediate understanding of JavaScript or another programming language to get through this tutorial. If you are new to coding, we recommend learning a coding language like JavaScript or Python first. We will be using some Javascript libraries like Web3.js to interact with our smart contract. 
+You’ll need to have an intermediate understanding of JavaScript or another programming language to get through this tutorial. If you are new to coding, we recommend learning a coding language like JavaScript or Python first. We will be using some Javascript libraries like Ethers.js to interact with our smart contract. 
 
 **Code Editor**
 

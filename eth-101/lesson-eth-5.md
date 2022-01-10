@@ -1,4 +1,5 @@
 # Anatomy of a Smart Contract
+<script src="https://gist.github.com/saeedjabbar/8df7a329edbb92274bf1f08c8cf55ee9.js"></script>
 
 ### Mindset
 
@@ -14,6 +15,7 @@ A bank needs to keep a total balance of their funds, allow customers to deposit 
 
 I'm going to paste the final code here and then break it down line by line so you have a high level overview of what's happening. Then we will plug it into remix to test. As a challenge for your self to figure out what the contract does, some of it is self evident but if you're stuck on anything look at [Solidity by Example](https://solidity-by-example.org/).
 
+
 ```solidity
 // SPDX-License-Identifier: GPL-3.0
 
@@ -28,28 +30,42 @@ contract Bank {
         bankOwner = msg.sender;
     }
 
-    function depositMoney(uint256 _total) public payable {
-        require(msg.value == _total, "You need to deposit some money");
-        customerBalance[msg.sender] += _total;
+    function depositMoney() public payable {
+        require(msg.value != 0, "You need to deposit some amount of money!");
+        customerBalance[msg.sender] += msg.value;
     }
 
     function setBankName(string memory _name) external {
-        require(msg.sender == bankOwner, "You must be the owner to set the name of the bank");
+        require(
+            msg.sender == bankOwner,
+            "You must be the owner to set the name of the bank"
+        );
         bankName = _name;
     }
 
     function withDrawMoney(address payable _to, uint256 _total) public payable {
-        require(_total <= customerBalance[msg.sender], "You have insuffient funds to withdraw");
+        require(
+            _total <= customerBalance[msg.sender],
+            "You have insuffient funds to withdraw"
+        );
 
         customerBalance[msg.sender] -= _total;
         _to.transfer(_total);
     }
 
+    function getCustomerBalance() external view returns (uint256) {
+        return customerBalance[msg.sender];
+    }
+
     function getBankBalance() public view returns (uint256) {
-        require(msg.sender == bankOwner, "You must be the owner of the bank to see all balances.");
+        require(
+            msg.sender == bankOwner,
+            "You must be the owner of the bank to see all balances."
+        );
         return address(this).balance;
     }
 }
+
 ```
 
 
@@ -172,7 +188,7 @@ contract Bank {
         bankOwner = msg.sender;
     }
 
-    function depositMoney(uint256 _total) public payable {
+    function depositMoney() public payable {
 			...
     }
 
@@ -182,6 +198,10 @@ contract Bank {
 
     function withDrawMoney(address payable _to, uint256 _total) public payable {
     	...
+    }
+    
+    function getCustomerBalance() external view returns (uint256) {
+       ...
     }
 
     function getBankBalance() public view returns (uint256) {
@@ -201,6 +221,7 @@ After our paramters we have a visibility specifer of public which allows the fun
 
 Here's a quick cheat cheat sheet for the specificers in Solidity, you can read more about them [here](https://ethereum.stackexchange.com/questions/32353/what-is-the-difference-between-an-internal-external-and-public-private-function/112106).
 
+
 | Visibility Specifiers | What they do?                                                 |
 | --------------------- | ------------------------------------------------------------- |
 | **public**            | All can accesss                                               |
@@ -212,15 +233,14 @@ Here's a quick cheat cheat sheet for the specificers in Solidity, you can read m
 
 Let's move on to the `require()` line. We could use if/else for our checks but require is preferred. Require is like a try, catch in javascript. First we check for the validity of a certain condition, and then we set the error if that condition isn't met. 
 
-Now notice we're using `msg.value` in our `require()`. `msg` is a global variable that allows us to access properties like  the `sender`  (the person interacting with the contract or triggering a transaction (tx)) of the contract is and `value` the amount of Ether in wei being sent. Here we're doing a check to ensure the amount of wei being sent from the users wallet is equal to the amount of money the user says they're depositing. 
+Now notice we're using `msg.value` in our `require()`. `msg` is a global variable that allows us to access properties like  the `sender`  (the person interacting with the contract or triggering a transaction (tx)) of the contract is and `value` the amount of Ether in wei being sent. Here we're doing a check to ensure the user doesn't send us 0 wei. 
 
 Lastly, we look through our customerBalance mappings to see if the address of the `msg.sender` exists and then add the total the deposited to their balance. Notice how mappings are more efficient than an array here, we would have had to loop through an array to find the `msg.sender` which is costly on Ethereum. 
 
 ```solidity
-    function depositMoney(uint256 _total) public payable {
-        require(msg.value == _total, "You need to deposit some money");
-        customerBalance[msg.sender] += _total;
-        //if noting is found in a mapping it will return 0
+     function depositMoney() public payable {
+        require(msg.value != 0, "You need to deposit some amount of money!");
+        customerBalance[msg.sender] += msg.value;
     }
 ```
 
@@ -253,6 +273,16 @@ This is self explainable but in short, we check if the balance the customer want
     }
 ```
 
+### **getCustomerBalance()**
+
+Lastly we create another getter to get the balance of the wallet calling our contract. 
+
+```solidity
+     function getCustomerBalance() external view returns (uint256) {
+        return customerBalance[msg.sender];
+    }
+```
+
 
 
 ### **getBankBalance()**
@@ -269,7 +299,7 @@ Lastly we create another getter function to get our bank balance.
 
 Deploy your contract to remix and experiment with it. Play around with the getter(blue buttons), setter(orange buttons), and transaction calls (red buttons). You can use this [calculator](https://eth-converter.com/) to convert Eth to Wei. Here's a video of the deployment of the contract to remix.  You can test quikcly with the JavaScript VM enviromment and then do another test with the Injected Web3 environment.  Here's the completed code for this [lesson](https://gist.github.com/saeedjabbar/8df7a329edbb92274bf1f08c8cf55ee9).
 
-<iframe className="mx-auto" width="100%" height="515" src="https://www.youtube.com/embed/8h7UOGVFSdw?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe className="mx-auto" width="100%" height="515"  src="https://www.youtube.com/embed/CvY331RwCDk?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Wrapping Up
 
