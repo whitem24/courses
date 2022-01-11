@@ -1,6 +1,6 @@
 # DAPP Front-end
 
-For our DAPP (decentralized app) we will be using React and Ethers.js to build the front-end for our Bank contract that we built in the previous lesson. You can view the final version of our project [here](https://cadena-bank-dapp.vercel.app/) and play around with it using the Rinkeby network. You can find the repo with the completed code for reference [here](https://github.com/CadenaDev/bank-dapp).
+For our DAPP (decentralized app) we will be using React and Ethers.js to build the front-end for our Bank contract that we built in the previous lesson. You can view the final version of our project [here](https://cadena-bank-dapp.vercel.app/) and play around with it using the Rinkeby network. You can find the repo with the completed code for reference [here](https://github.com/CadenaDev/bank-dapp-boilerplate).
 
 Ethers is a javascript libary that helps us interact with our smart contract and the ethereum blockchain. React is a front-end library commonly used for DAPP interfaces. If you don't know react that's fine these principles apply to other front-end frameworks as well and I will be providing the React code and styling for you. If you would like a quick 101 of react, check this [out](https://create-react-app.dev/docs/getting-started). While this isn't a course on React, I will provide a high level overview of certain React concepts so those who aren't familiar with React can follow along.
 
