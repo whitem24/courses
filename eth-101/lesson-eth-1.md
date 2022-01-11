@@ -6,7 +6,7 @@ In addition to having a native currency, Ethereum is actually a distributed comp
 
 In addition to creating smart contracts, Ethereum has facilitated the creation of new coins that use the network and NFT’s. To create a currency on top of Ethereum, you follow the [ERC20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) token stanard and to create an NFT you follow the [ERC-721](https://ethereum.org/en/developers/docs/standards/tokens/erc-721) standard. Recently there's been introduced the [ERC-1155](https://eips.ethereum.org/EIPS/eip-1155) that let's you save on gas by using one contract for multiple tokens.
 
-What makes this blockchain unique is that it is a network, a database, and a computer. Every action executed on the Ethereum blockchain requires a fee to be paid known as gas. The fees used to be fairly cheap but as of this writing it can cost up to $100 to send $0 dollars. 
+What makes this blockchain unique is that it is a network, a database, and a computer. Every action executed on the Ethereum blockchain requires a fee to be paid known as gas. The fees used to be fairly cheap but as of this writing it can cost up to $100 to send 10 dollars. 
 
 This has led to the creation of other blockchains like Solana, which offers lower fees and faster transaction times. We will be using Ethereum to start with since it is the most used blockchain and has a large developer community but stay tuned for our Solana tutorials. 
 
