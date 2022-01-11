@@ -2,7 +2,7 @@
 
 Now that we're all setup let's deploy our bank contract to the Rinkeby network. Be sure to have fake eth in your account from a faucet before we proceed.
 
-1. First, copy the code from our bank contract lesson, create a file called "BankContrat.sol" in the contracts folder in your hardhat project and paste your code in, then save the file. If you need a copy of the contract you can find it [here](https://gist.github.com/saeedjabbar/8df7a329edbb92274bf1f08c8cf55ee9).
+1. First, copy the code from our bank contract lesson, create a file called "BankContract.sol" in the contracts folder in your hardhat project and paste your code in, then save the file. If you need a copy of the contract you can find it [here](https://gist.github.com/saeedjabbar/8df7a329edbb92274bf1f08c8cf55ee9).
 2. Then we compile our contract with by running this command, remember this flow compile -> deploy.
 
 ```bash
@@ -15,9 +15,9 @@ You should see `Compilation finished successfully`. If you don't for some reason
 npx hardhat clean
 ```
 
- Notice after we compiled our contract, we have a new folder called `artifacts` that contains two other folders `build-info` and `contracts`. Open those folers up and take a look around. 
+ Notice after we compiled our contract, we have a new folder called `artifacts` that contains two other folders `build-info` and `contracts`. Open those folders up and take a look around. 
 
-In contracts notice a file named Bank.json or what ever the name was of your smart contract. This will be super important because we will need it to for our front-end to interact with our smart contract. This is essentially a JSON version of our smart contract. This is reffered to as an ABI file, you can learn more about that [here](https://www.quicknode.com/guides/solidity/what-is-an-abi) and read more about artifacts [here](https://hardhat.org/guides/compile-contracts.html#artifacts).
+In contracts notice a file named Bank.json or what ever the name was of your smart contract. This will be super important because we will need it for our front-end to interact with our smart contract. This is essentially a JSON version of our smart contract. This is referred to as an ABI file, you can learn more about that [here](https://www.quicknode.com/guides/solidity/what-is-an-abi) and read more about artifacts [here](https://hardhat.org/guides/compile-contracts.html#artifacts).
 
 3. Now it's time to deploy our contract. In your scripts folder, create a new file called deploy.js and paste the following code. I've included the comments that come out of the box with hardhat but we will also go through this line by line.
 
@@ -58,7 +58,7 @@ main()
 
 ```
 
-I'll be only focusing on these 4 lines since the rest is self explanatory and the hardhat comments do a great job explaining the rest.
+I'll be only focusing on these 4 lines since the rest is self-explanatory and the hardhat comments do a great job explaining it.
 
 ```javascript
   const [owner] = await hre.ethers.getSigners();
@@ -70,7 +70,7 @@ We're getting the contract owner from the ethers object. You can read more on Si
   const BankContractFactory = await hre.ethers.getContractFactory("Bank");
 ```
 
-This is where the magic happens, we get the contrct using `getContractFactory` and our contract name. Then it is compiled and the output is the resulting files in the artifacts folder.
+This is where the magic happens, we get the contract using `getContractFactory` and our contract name. Then it is compiled and the output is the resulting files in the artifacts folder.
 
 The next two lines may look similar but they're different.
 
@@ -94,7 +94,7 @@ After you copy and paste the code into deploy.js, run the following to deploy to
 npx hardhat run scripts/deploy.js --network rinkeby
 ```
 
-You should see the following. The contract address and the wallet address of the owner.
+You should see something like the following. The contract address and the wallet address of the owner.
 
 ```bash
 BankContract deployed to: 0x8DA9151adD3070fAc7c887B1f6FadA58CC2a12c5
