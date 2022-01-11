@@ -13,7 +13,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/0xrootbeet"><img src="https://avatars.githubusercontent.com/u/95595538?v=4?s=100" width="100px;" alt=""/><br /><sub><b>0xRootBeet</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3A0xrootbeet" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/0xrootbeet"><img src="https://avatars.githubusercontent.com/u/95595538?v=4?s=100" width="100px;" alt=""/><br /><sub><b>0xRootBeet</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3A0xrootbeet" title="Bug reports">🐛</a> <a href="#content-0xrootbeet" title="Content">🖋</a></td>
   </tr>
 </table>
 
