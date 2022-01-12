@@ -14,7 +14,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/0xrootbeet"><img src="https://avatars.githubusercontent.com/u/95595538?v=4?s=100" width="100px;" alt=""/><br /><sub><b>0xRootBeet</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3A0xrootbeet" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/sameer-kumar-shrivastava-a79650227/"><img src="https://avatars.githubusercontent.com/u/95861453?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sameer Kumar Shrivastava</b></sub></a><br /><a href="#content-sameer-kumar-shrivastava" title="Content">🖋</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/sameer-kumar-shrivastava-a79650227/"><img src="https://avatars.githubusercontent.com/u/95861453?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sameer Kumar Shrivastava</b></sub></a><br /><a href="#content-sameer-kumar-shrivastava" title="Content">🖋</a> <a href="https://github.com/CadenaDev/courses/issues?q=author%3Asameer-kumar-shrivastava" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
