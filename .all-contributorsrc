@@ -23,6 +23,15 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "iSumitBanik",
+      "name": "Sumit Banik",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36637433?v=4",
+      "profile": "https://www.linkedin.com/in/sumitbanik/",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
