@@ -1,6 +1,6 @@
 # Project 1: Creating a DAPP 
 
-For project one create a DAPP that interacts with a smart contract. Some ideas to consider are creating a shared wallet, treasuery or a DAO that only lets members vote on proposals. 
+For project one create a DAPP that interacts with a smart contract. Some ideas to consider are creating a shared wallet, treasury or a DAO that only lets members vote on proposals. 
 
  The project must includes the following:
 
@@ -8,9 +8,9 @@ For project one create a DAPP that interacts with a smart contract. Some ideas t
 2. Have at least one transaction. 
 3. A front-end for your DAPP using Ethers.js and your favorite front-end framework (Vue, React, etc). 
 
-**Bonus:** Incorporate Solidity events into your smart contract and DAPP. For a quick 101 on Events, see this [resouce](https://blog.chain.link/events-and-logging-in-solidity/) and [this](https://solidity-by-example.org/events/). 
+**Bonus:** Incorporate Solidity events into your smart contract and DAPP. For a quick 101 on Events, see this [resource](https://blog.chain.link/events-and-logging-in-solidity/) and [this](https://solidity-by-example.org/events/). 
 
-You can also debug your contract using the `console.log()` feature in Hardhat. [Here's](https://hardhat.org/tutorial/debugging-with-hardhat-network.html) a guide to set it up.
+You can also debug your contract using the `console.log()` feature in Hardhat. [Here's](https://hardhat.org/tutorial/debugging-with-hardhat-network.html) a guide on how to set it up.
 
 You can use Vercel, Github pages, heroku, etc to host your DAPP for free. If you run into an error with Vercel when deploying [here's](https://dev.to/rabihcigar/treating-warnings-as-errors-because-process-env-ci-true-22i4) the fix.
 
