@@ -11,7 +11,8 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/95595538?v=4",
       "profile": "https://github.com/0xrootbeet",
       "contributions": [
-        "bug"
+        "bug",
+        "content"
       ]
     },
     {
@@ -21,6 +22,15 @@
       "profile": "https://www.linkedin.com/in/sameer-kumar-shrivastava-a79650227/",
       "contributions": [
         "content",
+        "bug"
+      ]
+    },
+    {
+      "login": "iSumitBanik",
+      "name": "Sumit Banik",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36637433?v=4",
+      "profile": "https://www.linkedin.com/in/sumitbanik/",
+      "contributions": [
         "bug"
       ]
     }

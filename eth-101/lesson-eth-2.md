@@ -24,7 +24,8 @@ To get started you will need a wallet. Your wallet will act as your login to acc
 
 We recommend using [MetaMask](https://metamask.io/). Please store your seed and private keys in a secure place. Create a test account just for this project. We will be using the Rinkeby Test Network, which is a test-network that mimics the the functionality of the real network. This allows us to use Fake Ether as well.
 
-Click on the fox icon in your browser, then click Ethereum Mainnet located at the top center, then in the drop down menu click Rinkeby Test Network.
+Click on the fox icon in your browser, then click Ethereum Mainnet located at the top center, then in the drop down menu click Rinkeby Test Network. 
+(If you dont find Rinkeby Test Network in the dropdown menu, go to settings => advanced => then switch on the 'show test networks' button. Hopefully the Rinkeby Test Network will showup along with other test networks).
 
 Next you will need send your self some fake Ether via what’s known as a faucet. Here are a list of faucets, again double check these as sometimes the faucets are out of fake ether.
 
@@ -41,7 +42,7 @@ Smart contracts are programmed in Solidity. Solidity is fairly easy to pick up, 
 Here’s a cheat sheet to speed up your learning:
 
 - A high level overview of the Solidity lanauge: [https://solidity-by-example.org/](https://solidity-by-example.org/)
-- CrytoZombies is another amazing resource to pick up Solidity as well: https://cryptozombies.io
+- CryptoZombies is another amazing resource to pick up Solidity as well: https://cryptozombies.io
 
 **JavaScript** 
 

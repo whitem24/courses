@@ -6,6 +6,8 @@ It is important that we understand the basic terminology from the world of crypt
 
 **Blockchain**: A decentralized network of computers used to create a trusted ledger.  
 
+**Oracles**: These are entities that connect blockchains to external systems thereby allowing smart contracts to execute based upon inputs and outputs from the real world.
+
 **Proof-of-Work**: Used to validate transactions on the blockchain.  
 
 **Proof-of-Stake**: An alternative to PoW to solve the energy consumption problem. PoS allows random token holders to be the next validator of a transaction.  
