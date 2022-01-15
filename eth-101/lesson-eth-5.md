@@ -215,7 +215,7 @@ contract Bank {
 
 ### depositMoney()
 
-We need a away for our customers to deposit money to our bank so we created a function called depositMoney. Let's break down the `depositMoney` function.  We have the name of our function followed by the parameter it's taking which has a type of `uint256` (256-bit unsigned integer, uint is the alias for uint256 ). Note that the parameter starts with an `_` (underscore). This isn't required but has become a convention, to distinguish parameters from other variables. Parameters are also temporarily stored in memory.
+We need a way for our customers to deposit money to our bank so we created a function called depositMoney. Let's break down the `depositMoney` function.  We have the name of our function followed by the parameter it's taking which has a type of `uint256` (256-bit unsigned integer, uint is the alias for uint256 ). Note that the parameter starts with an `_` (underscore). This isn't required but has become a convention, to distinguish parameters from other variables. Parameters are also temporarily stored in memory.
 
 After our paramters, we have a visibility specifier of public which allows the function to be called internally or externally. Then we have our modifier `payable`. As the name implies we need this modifier to recieve money in our contract. You can also use the receive function introduced in Solidity 0.6, you can read more about that [here](https://blog.soliditylang.org/2020/03/26/fallback-receive-split/).
 
