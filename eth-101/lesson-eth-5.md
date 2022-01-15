@@ -219,7 +219,7 @@ We need a away for our customers to deposit money to our bank so we created a fu
 
 After our paramters, we have a visibility specifier of public which allows the function to be called internally or externally. Then we have our modifier `payable`. As the name implies we need this modifier to recieve money in our contract. You can also use the receive function introduced in Solidity 0.6, you can read more about that [here](https://blog.soliditylang.org/2020/03/26/fallback-receive-split/).
 
-Here's a quick cheat cheat sheet for the specifiers in Solidity, you can read more about them [here](https://ethereum.stackexchange.com/questions/32353/what-is-the-difference-between-an-internal-external-and-public-private-function/112106).
+Here's a quick cheat sheet for the specifiers in Solidity, you can read more about them [here](https://ethereum.stackexchange.com/questions/32353/what-is-the-difference-between-an-internal-external-and-public-private-function/112106).
 
 
 | Visibility Specifiers | What they do?                                                 |
