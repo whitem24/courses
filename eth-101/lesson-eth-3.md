@@ -28,7 +28,7 @@ contract HelloWorld {
 }
 ```
 
-Next let's create a variable to store the classic greeting "Hello World!". You might have noticed the keyword **public** here. This allows for the creation of a getter function in the view part of our application and can be used with varibles and functions.
+Next let's create a variable to store the classic greeting "Hello World!". You might have noticed the keyword **public** here. This allows for the creation of a getter function in the view part of our application and can be used with variables and functions.
 
 ```solidity
 contract HelloWorld {
