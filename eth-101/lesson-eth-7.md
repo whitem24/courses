@@ -44,7 +44,7 @@ async function main() {
   await BankContract.deployed();
 
   console.log("BankContract deployed to:", BankContract.address);
-  console.log("BankContract owner address:", BankContract.address);
+  console.log("BankContract owner address:", owner.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
