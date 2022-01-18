@@ -17,7 +17,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.linkedin.com/in/sameer-kumar-shrivastava-a79650227/"><img src="https://avatars.githubusercontent.com/u/95861453?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sameer Kumar Shrivastava</b></sub></a><br /><a href="#content-sameer-kumar-shrivastava" title="Content">🖋</a> <a href="https://github.com/CadenaDev/courses/issues?q=author%3Asameer-kumar-shrivastava" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/sumitbanik/"><img src="https://avatars.githubusercontent.com/u/36637433?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sumit Banik</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3AiSumitBanik" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/Moldir28"><img src="https://avatars.githubusercontent.com/u/75260678?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Moldyr </b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3AMoldir28" title="Bug reports">🐛</a></td>
-        <td align="center"><a href="https://github.com/AvachaBay"><img src="https://avatars.githubusercontent.com/u/45499422?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Moldyr </b></sub></a><br /><a href="https://github.com/CadenaDev/courses/" title="Bug reports">🐛</a></td>
+        <td align="center"><a href="https://github.com/AvachaBay"><img src="https://avatars.githubusercontent.com/u/45499422?v=4?s=100" width="100px;" alt=""/><br /><sub><b>AvachaBay </b></sub></a><br /><a href="https://github.com/CadenaDev/courses/" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
