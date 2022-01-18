@@ -1,4 +1,4 @@
-# Terms and Definations 📚
+# Terms and Definitions 📚
 
 It is important that we understand the basic terminology from the world of crypto. So here are some terms to know:  
 
@@ -10,7 +10,7 @@ It is important that we understand the basic terminology from the world of crypt
 
 **Proof-of-Work**: Used to validate transactions on the blockchain.  
 
-**Proof-of-Stake**: An alternative to PoW to solve the energy consumption problem. PoS allows random token holders to be the next validator of a transaction.  
+**Proof-of-Stake**: An alternative to PoW (Proof-of-Work) to solve the energy consumption problem. PoS allows random token holders to be the next validator of a transaction.  
 
 **Bitcoin**: The most well-known cryptocurrency even though it is less of a currency and more of a store of value.  
 
