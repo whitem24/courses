@@ -51,6 +51,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "ceghap",
+      "name": "Ashraf Latif",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3787687?v=4",
+      "profile": "https://ceghap.com/",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
