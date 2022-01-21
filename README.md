@@ -21,6 +21,15 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
 </table>
 
+<table>
+  <tr>
+        <td align="center"><a href="https://github.com/AvachaBay"><img src="https://avatars.githubusercontent.com/u/45499422?v=4?s=100" width="100px;" alt=""/><br /><sub><b>AvachaBay </b></sub></a><br /><a href="https://github.com/CadenaDev/courses/" title="Bug reports">🐛</a></td>
+        <td align="center"><a href="https://github.com/alemhar"><img src="https://avatars.githubusercontent.com/u/13273199?v=4?s=100" width="100px;" alt=""/><br /><sub><b>AvachaBay </b></sub></a><br /><a href="https://github.com/alemhar" title="Bug reports">🐛</a></td>
+
+  </tr>
+</table>
+
+
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
