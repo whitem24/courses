@@ -1,0 +1,1 @@
+Coming Soon! Future lessons will include building the front-end and smart contract for an NFT project that can be viewed on OpenSea. We will even deploy it to the Polygon network and touch on topics like storing files with IPFS.

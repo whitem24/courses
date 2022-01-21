@@ -215,19 +215,17 @@ contract Bank {
 
 ### depositMoney()
 
-We need a way for our customers to deposit money to our bank so we created a function called depositMoney. Let's break down the `depositMoney` function.  We have the name of our function followed by the parameter it's taking which has a type of `uint256` (256-bit unsigned integer, uint is the alias for uint256 ). Note that the parameter starts with an `_` (underscore). This isn't required but has become a convention, to distinguish parameters from other variables. Parameters are also temporarily stored in memory.
-
-After our paramters, we have a visibility specifier of public which allows the function to be called internally or externally. Then we have our modifier `payable`. As the name implies we need this modifier to recieve money in our contract. You can also use the receive function introduced in Solidity 0.6, you can read more about that [here](https://blog.soliditylang.org/2020/03/26/fallback-receive-split/).
+We need a way for our customers to deposit money to our bank so we created a function called depositMoney. Let's break down the `depositMoney` function. We have a visibility specifier of public which allows the function to be called internally or externally. Then we have our modifier `payable`. As the name implies we need this modifier to recieve money in our contract. You can also use the receive function introduced in Solidity 0.6, you can read more about that [here](https://blog.soliditylang.org/2020/03/26/fallback-receive-split/).
 
 Here's a quick cheat sheet for the specifiers in Solidity, you can read more about them [here](https://ethereum.stackexchange.com/questions/32353/what-is-the-difference-between-an-internal-external-and-public-private-function/112106).
 
 
-| Visibility Specifiers | What they do?                                                 |
-| --------------------- | ------------------------------------------------------------- |
-| **public**            | Everyone can access                                           |
-| **private**           | Can be accessed only from within this contract                |
-| **internal**          | Only this contract and contracts deriving from it can access  |
-| **external**          | Cannot be accessed internally, only externally (saves gas)    |
+| Visibility Specifiers | What they do?                                                |
+| --------------------- | ------------------------------------------------------------ |
+| **public**            | Everyone can access                                          |
+| **private**           | Can be accessed only from within this contract               |
+| **internal**          | Only this contract and contracts deriving from it can access |
+| **external**          | Cannot be accessed internally, only externally (saves gas)   |
 
 *Credit: Dragos Barosan*
 
@@ -248,7 +246,9 @@ Lastly, we look through our customerBalance mappings to see if the address of th
 
 ### setBankName()
 
-We declared the state variable `bankName` earlier in our code, now we want to set the value of that state variable. We will do so with a setter function which can be called externally, hence why I am using the `external` keyword here. We could use `public` but since we aren't calling this function any where in our contract, we can save gas using external. Setter functions will cost us gas.
+We declared the state variable `bankName` earlier in our code, now we want to set the value of that state variable. We will do so with a setter function which can be called externally, hence why I am using the `external` keyword here. We could use `public` but since we aren't calling this function any where in our contract, we can save gas using external. Setter functions will cost us gas. 
+
+Notice that the function parameter `name` starts with an `_` (underscore). This isn't required but has become a convention, to distinguish parameters from other variables. Parameters are also temporarily stored in memory.
 
 I am also being explicit for demonstration purposes by ensuring `_name` is stored in memory. Lastly we do a check so that only the address of the bank owner can change the bank name (this is why we stored it in a permanent state variable earlier). Then lastly we assign the new bank name to the `bankName` variable. You may be wondering, well how do we get the `bankName`? A getter for the variable is already created for us when we initilaize the variable and made it public.
 
