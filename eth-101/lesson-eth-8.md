@@ -1,4 +1,4 @@
-# aDAPP Front-end
+# DAPP Front-end
 
 For our DAPP (decentralized app) we will be using React and Ethers.js to build the front-end for our Bank contract that we built in the previous lesson. You can view the final version of our project [here](https://cadena-bank-dapp.vercel.app/) and play around with it using the Rinkeby network. You can find the repo with the completed code for reference [here](https://github.com/saeedjabbar/cadena-bank-dapp).
 
