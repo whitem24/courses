@@ -236,7 +236,7 @@ if (owner.toLowerCase() === account.toLowerCase()) {
 }
 ```
 
-In line want we're calling our contract to get the address of the bank owner, remember we stored that in a public variable in our contract [here](https://gist.github.com/saeedjabbar/8df7a329edbb92274bf1f08c8cf55ee9#file-bankcontract-sol-L6). Next we're getting the current Ethereum account on line 4. The in line 6, we're checking to see if the current MetaMask Wallet address matches the address that deployed and owns the contract. If that is the case we use `setIsBankerOwner` to set our bank owner flag to true and show the special admin panel.
+In `line 1` we're calling our contract to get the address of the bank owner, remember we stored that in a public variable in our contract [here](https://gist.github.com/saeedjabbar/8df7a329edbb92274bf1f08c8cf55ee9#file-bankcontract-sol-L6). Next we're getting the current Ethereum account on line 4. Then in line 6, we're checking to see if the current MetaMask Wallet address matches the address that deployed and owns the contract. If that is the case, we use `setIsBankerOwner` to set our bank owner flag to true and show the special admin panel.
 
 ## Customer Balance
 
