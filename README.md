@@ -1,6 +1,6 @@
 See a typo or think you can explain a concept better?You're welcome to work and make edits to our material. 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -19,6 +19,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Moldir28"><img src="https://avatars.githubusercontent.com/u/75260678?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Moldyr </b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3AMoldir28" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://sushanshakya.github.io/"><img src="https://avatars.githubusercontent.com/u/53656009?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sushan Shakya</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3ASushanShakya" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://ceghap.com/"><img src="https://avatars.githubusercontent.com/u/3787687?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ashraf Latif</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3Aceghap" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/maxeclairs"><img src="https://avatars.githubusercontent.com/u/4637967?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Akhilesh Upadhyaya</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3Amaxeclairs" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
