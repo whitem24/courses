@@ -60,6 +60,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "maxeclairs",
+      "name": "Akhilesh Upadhyaya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4637967?v=4",
+      "profile": "https://github.com/maxeclairs",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
