@@ -70,7 +70,7 @@ contract MemeCoin is ERC20, Ownable, ERC20Burnable {
 
 In `line 1` we are creating our contract called MemeCoin and using the `is` keyword to inherit the functionalities of the [ERC20](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol#L87), [Ownable](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol), and [ERC20Burnable](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Burnable.sol) libaries into our contract. Take a look at the contracts by clicking the links in the previous sentence to get a sense of the functions and variables we will be using in our code. For instance we're inheriting the [burn()](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Burnable.sol#L20)  function from **ERC20Burnable** to burn an excessive supply of our tokens if we needed to.
 
-Then on lines 2 through 4, we set up a Solidity [event](https://solidity-by-example.org/events/) which lets us set up error logging directly to the Ethereum blockchain. We start with the keyword event followed by the name of the events and the paramters we want to log to the blockchain. The `indexed` keyword is used for keywords that we want to use as a filter on the blockcahin. Events are followed by an emitter which triggers the log to be saved. The format for an emitter is as follows: 
+Then on lines 2 through 4, we set up a Solidity [event](https://solidity-by-example.org/events/) which lets us set up logging directly to the Ethereum blockchain. We start with the keyword event followed by the name of the events and the paramters we want to log to the blockchain. The `indexed` keyword is used for keywords that we want to use as a filter on the blockcahin. Events are followed by an emitter which triggers the log to be saved. The format for an emitter is as follows: 
 
 ```solidity
 emit tokensBurned(msg.sender, amount, "Tokens burned.");
@@ -85,9 +85,9 @@ constructor() ERC20("FoxCoin", "FXC") {
 }
 ```
 
-In `line 1` we're calling our constructor then right after the ERC20 constructor which requires the name of our token and it's ticker symbol. Then in `line 2` we're pulling the [_mint](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol#L252) function from the ERC20 library which lets us mint our token and transfer it to ourselves via `msg.sender`.
+In `line 1` we're calling our ERC20 constructor which requires the name of our token and its ticker symbol as its parameters. Then in `line 2` we're pulling the [_mint](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol#L252) function from the ERC20 library which lets us mint our token and transfer it to ourselves via `msg.sender`.
 
- In this case we're minting 1000 tokens but notice we using `decimal()` . This function allows us to create fractional amounts of our currency in this case 18 decimal places just like wei. `decimal()` actually just returns the number 18, you can see that [here](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol#L87). Alternatively we could have just written ` 1000 * 10**18` but why not get a little fancy 🙂 Then finally we set up an emitter to log our action to the blockchain.
+ In this case we're minting 1000 tokens but notice that we are using `decimal()` . This function allows us to create fractional amounts of our currency, in this case 18 decimal places just like wei. `decimal()` actually just returns the number 18, you can see that [here](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol#L87). Alternatively, we could have just written ` 1000 * 10**18` but why not get a little fancy 🙂 Then finally we set up an emitter to log our action to the blockchain.
 
 ```solidity
 function mint(address to, uint256 amount) public onlyOwner {
@@ -107,9 +107,9 @@ function burn(uint256 amount) public override onlyOwner {
 
 Notice we're using the `override` specifier here in line 1. This is used because there's already a burn() function specified in `ER20.sol` and we want to overwrite that with the burn function in `ERC20Burnable.sol`.  As usual, we log the amount of tokens that have been burned.  
 
-## Depoy and Env Vairables
+## Deploy and Env Vairables
 
-Be sure to also configure your deploy.js file in Hardhat and your .env variables if you haven't done also already. 
+Be sure to also configure your deploy.js file in Hardhat and your .env variables if you haven't done that already. 
 
 ```javascript
 const hre = require("hardhat");
@@ -143,11 +143,11 @@ RINKEBY_PRIVATE_KEY=YOUR_PRIVATE_KEY
 
 ## Wrapping Up 🎁
 
-And that's a wrap! Go ahead and deploy your token in Hardhat or remix. In MetaMask [click on import tokens](https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask), drop in your token address from the Rinkeby network and like magic it will pull into your token symbol and amounts. Feel free to spread the wealth with other classmates and show off on twitter your very own meme coin, Tag us at @cadenadev for a retweet.
+And that's a wrap! Go ahead and deploy your token in Hardhat or Remix. In MetaMask [click on import tokens](https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask), drop in your token address from the Rinkeby network and like magic it will pull in your token symbol and amounts. Feel free to spread the wealth with other classmates and show off on twitter your very own meme coin. Tag us at @cadenadev for a retweet.
 
 Remeber you can also debug in Hardhat using the [console.log()](https://hardhat.org/tutorial/debugging-with-hardhat-network.html).
 
-If you want to test your contract out, [Remix](https://remix.ethereum.org/) is a great way to do so as well since you get to test all the getters and setters without needing a front-end. If you do use remix, you may need to the direct url of the contract library for it to work, ie: 
+If you want to test your contract out, [Remix](https://remix.ethereum.org/) is a great way to do so as well since you get to test all the getters and setters without needing a front-end. If you do use remix, you may need the direct url of the contract library for it to work, i.e.: 
 
 ```solidity
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
