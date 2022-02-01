@@ -8,8 +8,10 @@ We're working on a Solana course but in the mean time here's a cheat sheet for t
 
 You'll need to learn Rust first.
 
-* Rust Crash Course from Traversy: https://www.youtube.com/watch?v=zF34dRivLOw
 * The Official Docs: https://doc.rust-lang.org/rust-by-example/
+* Rust Crash Course from Traversy: https://www.youtube.com/watch?v=zF34dRivLOw
+
+<iframe width="100%" height="415" src="https://www.youtube-nocookie.com/embed/zF34dRivLOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Learning About Solana 
 
