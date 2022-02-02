@@ -25,3 +25,9 @@ You'll need to learn Rust first.
 * Installing Anchor (Anchor is like Hardhat but for Solana) https://project-serum.github.io/anchor/getting-started/introduction.html
 * DAPP Scaffold: https://github.com/solana-labs/dapp-scaffold
 
+**Wallets**
+
+* Wallet Guide: https://docs.solana.com/wallet-guide
+* Phantom: https://phantom.app/
+* Solflare: https://solflare.com/
+* Sollet: https://www.sollet.io/
