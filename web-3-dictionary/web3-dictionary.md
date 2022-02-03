@@ -54,4 +54,16 @@ It is important that we understand the basic terminology from the world of crypt
 
 **ALPHA**: What's the return on investment.
 
+**RUG PULL**: scam by Founders of that Particular project.
+
+**IDO** : Initial DEX Offering.
+
+**ICO** : Initial Coin Offering.
+
+**INO** : Initial NFT Offering.
+
+**MEME COINS** : Coins made for fun.
+
+**LAUNCHPAD** : Place where the IDO, ICO, INO 's of various projects taxes place.
+
 *Credit: Fabrice Grinda*
