@@ -52,7 +52,7 @@ It is important that we understand the basic terminology from the world of crypt
 
 **Proof-of-Stake**: An alternative to PoW (Proof-of-Work) to solve the energy consumption problem. PoS allows random token holders to be the next validator of a transaction.  
 
-**Rug Pull**: scam by Founders of that Particular project.
+**Rug Pull**: scam by Founders of that particular project.
 
 **Stablecoin**: are cryptos tied typically to the US dollar.  
 
