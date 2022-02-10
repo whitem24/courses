@@ -241,7 +241,7 @@ In `line 1` we're calling our contract to get the address of the bank owner, rem
 ## Customer Balance
 
 ```javascript
-  const customerBalanceHanlder = async () => {
+  const customerBalanceHandler = async () => {
     try {
       if (window.ethereum) {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -280,7 +280,7 @@ To get the balance we're calling the getCustomerBalance() function in our smart 
         await txn.wait();
         console.log("Deposited money...done", txn.hash);
 
-        customerBalanceHanlder();
+        customerBalanceHandler();
 
       } else {
         console.log("Ethereum object not found, install Metamask.");
@@ -317,7 +317,7 @@ We're deposting money into our contract. As usual with a transaction function it
         await txn.wait();
         console.log("Money with drew...done", txn.hash);
 
-        customerBalanceHanlder();
+        customerBalanceHandler();
 
       } else {
         console.log("Ethereum object not found, install Metamask.");
@@ -344,7 +344,7 @@ Lastly we withdraw money back to our wallet and update our balance. Notice we're
     checkIfWalletIsConnected();
     getBankName();
     getbankOwnerHandler();
-    customerBalanceHanlder()
+    customerBalanceHandler()
   }, [isWalletConnected]);
 ```
 
