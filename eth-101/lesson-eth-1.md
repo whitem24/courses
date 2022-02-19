@@ -1,5 +1,11 @@
 # The Ethereum Blockchain
 
+### How this course works?
+
+In this course you will learn how to build dapps, smart contracts, and deploy them to the Ethereum Blockchain. This course can be completed over a weekend and includes 3 projects that you can add to your portfolio. In order to qualify for a certificate you need to submit these 3 projects for review. Upon review, you will then recieve an NFT Certificate that can be added to your Linkedin or Resume. Some coding experience is required, the key 🔑  is to push through the lessons to learn the big picture concepts and you will pick up languages like Solidity as you build.
+
+### What's the Ethereum Blockchain? 
+
 For our course we will be using the Ethereum blockchain. You might have heard of Ethereum and it’s core currency Ether. Ethereum was created by Vitalik Buterin and takes the concept of blockchains one step further. 
 
 In addition to having a native currency, Ethereum is actually a distributed computer that you can execute code on in the form of Smart Contracts. So now we have a blockchain that is a database, a network, and a computer. 
