@@ -113,6 +113,6 @@ On the `Select Ecosystem` page choose "Ethereum including L2s". On the `Create y
 
 For the plan click free forever, click skip for now when they ask for credit card info, then hit continue for scaling policy. Click let's go to be taken to your dashboard. Click the name of your app "Bank DAPP", click view details and in the top right click view key. Copy and paste your HTTP key into the `ALCHEMY_RINKEBY_URL` section. Save your .env file.
 
-To load up your account with fake eth, [here](https://app.cadena.dev/lesson/ethereum-101/lesson-eth-2/2) are some faucets from our previous lessons.
+To load up your account with fake eth, [here](https://app.cadena.dev/ZHjzLozd3mCsAcgMfeHE/lesson/ethereum-101/lesson-eth-2/2) are some faucets from our previous lessons.
 
 Great job getting this far! That was a lot, so feel free to take a breather 🌱
