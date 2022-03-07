@@ -87,6 +87,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "HarlandLohora",
+      "name": "Harland Lohora",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26666489?v=4",
+      "profile": "https://harlandlohora.com/",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,

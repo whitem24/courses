@@ -1,6 +1,6 @@
 See a typo or think you can explain a concept better?You're welcome to work and make edits to our material. 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -24,6 +24,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/suhasdasari"><img src="https://avatars.githubusercontent.com/u/62507133?v=4?s=100" width="100px;" alt=""/><br /><sub><b>suhasdasari</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3Asuhasdasari" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/dkayzee"><img src="https://avatars.githubusercontent.com/u/43211253?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Daniel Kim</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3Adkayzee" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://harlandlohora.com/"><img src="https://avatars.githubusercontent.com/u/26666489?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Harland Lohora</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3AHarlandLohora" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
