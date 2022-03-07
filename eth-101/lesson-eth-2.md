@@ -42,7 +42,7 @@ Smart contracts are programmed in Solidity. Solidity is fairly easy to pick up, 
 
 Here’s a cheat sheet to speed up your learning:
 
-- A high level overview of the Solidity lanauge: [https://solidity-by-example.org/](https://solidity-by-example.org/)
+- A high level overview of the Solidity language: [https://solidity-by-example.org/](https://solidity-by-example.org/)
 - CryptoZombies is another amazing resource to pick up Solidity as well: https://cryptozombies.io
 
 **JavaScript** 
