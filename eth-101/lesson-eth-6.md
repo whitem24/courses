@@ -1,6 +1,6 @@
 # Environment Setup 🛠
 
-As a smart contract developer we need to compile, test, debug, and deploy our contracts. Then we need a front-end libary to help us interact with our smart contract. There are many development frameworks and front-end libaries that help us with this, the most popular being truffle and web3.js. 
+As a smart contract developer we need to compile, test, debug, and deploy our contracts. Then we need a front-end library to help us interact with our smart contract. There are many development frameworks and front-end libraries that help us with this, the most popular being truffle and web3.js. 
 
 While truffle and web3.js are used in many projects today, more and more developers are switching over to hardhat and ethers.js for smart contract development so we will be using this stack moving forward. We still recommend playing around with truffle and web3.js. There are even SDKs out there that abstract away the complexity of developing contracts so you can write everything in just JavaScript, but it's important to learn the basics first.
 
@@ -53,7 +53,7 @@ We will do a quick breakdown of these dependencies and what they do.
 | ------------ | ----------------------------------------------------------------- |
 | waffle       | Used for testing smart contracts                                  |
 | chai         | Used for testing in Javascript                                    |
-| ethers       | A javascript libary used to interact with the Ethereum blockchain.|
+| ethers       | A javascript library used to interact with the Ethereum blockchain.|
 
 4. Run `npx hardhat` again and you will see the global options and pay special attention to the tasks, we will using some of these often. you can use `npx hardhat accounts` to see a list of test accounts we can work with.
 
