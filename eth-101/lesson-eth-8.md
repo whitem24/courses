@@ -2,7 +2,7 @@
 
 For our DAPP (decentralized app) we will be using React and Ethers.js to build the front-end for our Bank contract that we built in the previous lesson. You can view the final version of our project [here](https://cadena-bank-dapp.vercel.app/) and play around with it using the Rinkeby network. You can find the repo with the completed code for reference [here](https://github.com/saeedjabbar/cadena-bank-dapp).
 
-Ethers is a javascript libary that helps us interact with our smart contract and the ethereum blockchain. React is a front-end library commonly used for dapp interfaces. If you don't know React that's fine, these principles apply to other front-end frameworks as well and I will be providing the React code and styling for you. If you would like a quick 101 of react, check this [out](https://create-react-app.dev/docs/getting-started). While this isn't a course on React, I will provide a high level overview of certain React concepts so those who aren't familiar with React can follow along.
+Ethers is a javascript library that helps us interact with our smart contract and the ethereum blockchain. React is a front-end library commonly used for dapp interfaces. If you don't know React that's fine, these principles apply to other front-end frameworks as well and I will be providing the React code and styling for you. If you would like a quick 101 of React, check this [out](https://create-react-app.dev/docs/getting-started). While this isn't a course on React, I will provide a high level overview of certain React concepts so those who aren't familiar with React can follow along.
 
 ![](https://cadena.incl.us/wp-content/uploads/2021/12/cadena-dapp-bank-project-rz.png)
 
@@ -264,7 +264,7 @@ In `line 1` we're calling our contract to get the address of the bank owner, rem
 
 To get the balance we're calling the getCustomerBalance() function in our smart contract and then on `line 9` we're setting that balance so we can display it to the user. Most importantly we're formatting it in Ether using `utils.formatEther()`.
 
-## Deposting Money
+## Depositing Money
 
 ```javascript
   const deposityMoneyHandler = async (event) => {
@@ -292,7 +292,7 @@ To get the balance we're calling the getCustomerBalance() function in our smart 
   }
 ```
 
-We're deposting money into our contract. As usual with a transaction function it will cost gas but notice on line 9 we're using the `utils.parseEther()` function to convert our Eth back into wei for our smart contract. After the transaction is completed we call our `customerBalanceHandler()` to update the balance of our account.
+We're depositing money into our contract. As usual with a transaction function it will cost gas but notice on line 9 we're using the `utils.parseEther()` function to convert our Eth back into wei for our smart contract. After the transaction is completed we call our `customerBalanceHandler()` to update the balance of our account.
 
 🚨Note: Test with small amouts of Eth (0.01) in the event you get an error regarding not having enough for gas.🚨
 
