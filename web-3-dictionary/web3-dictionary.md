@@ -4,9 +4,17 @@ It is important that we understand the basic terminology from the world of crypt
 
 **Alpha**: What's the return on investment.
 
-**Bitcoin**: The most well-known cryptocurrency even though it is less of a currency and more of a store of value.  
+**Airdrop**: A marketing technique to promote a new virtual token/ coin by sending them to wallet addresses
 
-**Blockchain**: A decentralized network of computers used to create a trusted ledger. 
+**Bitcoin**: The most well-known cryptocurrency even though it is less of a currency and more of a store of value.
+
+**Bridge**: A protocol allowing blockchains to interact each other.
+
+**Blockchain**: A decentralized network of computers used to create a trusted ledger.
+
+**BUIDL**: Build.
+
+**Burn**: It is a process to purposefully remove permanently certain number of tokens from circulation, often sending them to a wallet to which no one has access.
 
 **Cross-chain**: the capacity to connect different protocols like a superhighway where all the cryptos have interoperability.
 
@@ -20,9 +28,13 @@ It is important that we understand the basic terminology from the world of crypt
 
 **Exchanges**: Platforms used to exchange or buy cryptos. There are centralized exchanges like Coinbase and Binance, and decentralized exchanges like Uniswap and Sushiswap  
 
-**Ethereum**: is a globally distributed computer with smart contracts.  
+**Ethereum**: is a globally distributed computer with smart contracts. 
 
-**FUD**: fear, uncertainty, and doubt.  
+**ERC**: Ethereum Request for Comments.
+
+**FUD**: fear, uncertainty, and doubt.
+
+**Gas**: A small fee paid to conduct and validate a transaction.
 
 **GM**: Goood Morning
 
