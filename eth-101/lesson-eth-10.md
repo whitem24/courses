@@ -96,7 +96,7 @@ function mint(address to, uint256 amount) public onlyOwner {
 }
 ```
 
-We create another mint function here in the event as there is a huge demand for our token and we want to add more supply. We're using the `onlyOwner` modifer here from the `Ownable.sol` library to restrict this action to the owner of the contract only. You can see this [here](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol#L8). We could of course do a `require` check here but we get a ton out of the box with the Ownable library like the ability to transfer the [ownership](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol#L23) of our contract. Then we end with an emiter to log that our tokens have been minted.
+We create another mint function here in the event as there is a huge demand for our token and we want to add more supply. We're using the `onlyOwner` modifier here from the `Ownable.sol` library to restrict this action to the owner of the contract only. You can see this [here](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol#L8). We could of course do a `require` check here but we get a ton out of the box with the Ownable library like the ability to transfer the [ownership](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol#L23) of our contract. Then we end with an emiter to log that our tokens have been minted.
 
 ```solidity
 function burn(uint256 amount) public override onlyOwner {
