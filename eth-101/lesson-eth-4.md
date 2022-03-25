@@ -1,4 +1,4 @@
-### DAPP Architecture Lifecycle
+## DAPP Architecture Lifecycle
 
 Let's cover at a high level what we just did to create our smart contract. We first wrote our contract in Solidity. Then deployed it to the Rinkeby Testnetwork, and finally made a call by clicking on the public variable we created in Remix. 
 
