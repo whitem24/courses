@@ -1,6 +1,7 @@
 # Project 1: Creating a DAPP 
+To qualify for certification you have two options. Your first option is to submit your DAPP Project (Project 1) and your own MemeCoin (project 2) or you can just submit one final project (Project 3).
 
-For project one create a DAPP that interacts with a smart contract. Some ideas to consider are creating a shared wallet, treasury or a DAO that only lets members vote on proposals. 
+For Project One, create a DAPP that interacts with a smart contract. Some ideas to consider are creating a shared wallet, treasury or a DAO that only lets members vote on proposals. Keep it simple.
 
  The project must includes the following:
 
@@ -16,7 +17,8 @@ You can use Vercel, Github pages, heroku, etc to host your DAPP for free. If you
 
 ## Submission
 
-* Email your Github link with your code and a link to your working front-end Dapp to [team@cadena.dev]()  
+* Email your Github link with your code and a link to your working front-end DAPP to [team@cadena.dev]()  
 * We will review your code which will count towards your certification. 
+* Please donot just fork the existing repos as that will disqualify you from a certification.
 * Plagiarism of any kind is not allowed and will disqualify you from receiving a certificate.
 * Feel free to show off your project in the [#showcase](https://discord.gg/UQayXxzazc) channel in the discord and tweet about it. Be sure to tag [@cadenadev](https://twitter.com/cadenadev) for a retweet!
