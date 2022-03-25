@@ -51,6 +51,6 @@ You’ll need to have an intermediate understanding of JavaScript or another pro
 
 **Code Editor**
 
-You can use your favorite code editor but download the package that allows for Solidity syntax highlighting. For some lessons we will use Remix, an online development environment for smart contacts ([remix.ethereum.org/](http://remix.ethereum.org/)).
+You can use your favorite code editor but download the package that allows for Solidity syntax highlighting. For some lessons we will use Remix, an online development environment for smart contracts ([remix.ethereum.org/](http://remix.ethereum.org/)).
 
 ➡️ **Action Item** Share with us your public address in the [discord](https://discord.gg/UQayXxzazc) and let us know what you learned by setting up your wallet. 

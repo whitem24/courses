@@ -4,7 +4,7 @@ For project one create a DAPP that interacts with a smart contract. Some ideas t
 
  The project must includes the following:
 
-1. Getters that read from your contact and setters that write to your smart contract.
+1. Getters that read from your contract and setters that write to your smart contract.
 2. Have at least one transaction. 
 3. A front-end for your DAPP using Ethers.js and your favorite front-end framework (Vue, React, etc). 
 

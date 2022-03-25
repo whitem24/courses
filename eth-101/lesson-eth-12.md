@@ -4,7 +4,7 @@ For project two create your own meme token. Give it a clever name, ticker symbol
 
  The project must includes the following:
 
-1. Getters that read from your contact and setters that write to your smart contract.
+1. Getters that read from your contract and setters that write to your smart contract.
 2. Incorporate the ability to burn, mint, transfer tokens.
 3. Render the name, symbol, balance, token owner, and total supply of your token on the front-end.
 4. A front-end for your DAPP using Ethers.js and your favorite front-end framework (Vue, React, etc). 
@@ -16,6 +16,6 @@ You can use Vercel, Github pages, heroku, etc to host your DAPP for free. If you
 ## Submission
 
 * Email your Github link with your code and a link to your working front-end Dapp to [team@cadena.dev]()  
-* We will review your code which will count towards your certificaiton. 
+* We will review your code which will count towards your certification. 
 * Plagiarism of any kind is not allowed and will disqualify you from receiving a certificate.
 * Feel free to show off your project in the [#showcase](https://discord.gg/UQayXxzazc) channel in the discord and tweet about it. Be sure to tag [@cadenadev](https://twitter.com/cadenadev) for a retweet!

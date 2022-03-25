@@ -47,7 +47,7 @@ Now let's jump into the first 3 lines. In our first line we're pulling some hook
 1. Create a folder called `contract` in your React project `src` folder, paste over your MemeCoin.json file from our smart contract lesson in our Hardhat project. The file is found in `./artifacts/contracts/MemeCoin.sol/MemeCoin.json`. It's commonly reffered to as an Application Binary Interface (ABI) file and contains a JSON version of our contract that we can interface with.
 2. Import your ABI file into your project using `import abi from "./contracts/MemeCoin.json";`
 
-I'm going to breilfy explain what's happening here. The first item in the array is a state variable that we use to store values we will need to refer later using the React `useState()` [hook](https://reactjs.org/docs/hooks-state.html). The second item is a function that lets us change our state. The parameters of the `useState()` function are our default values i.e. our wallet connection status is set to false by default.
+I'm going to briefly explain what's happening here. The first item in the array is a state variable that we use to store values we will need to refer later using the React `useState()` [hook](https://reactjs.org/docs/hooks-state.html). The second item is a function that lets us change our state. The parameters of the `useState()` function are our default values i.e. our wallet connection status is set to false by default.
 
 ```javascript
   const [isWalletConnected, setIsWalletConnected] = useState(false);
