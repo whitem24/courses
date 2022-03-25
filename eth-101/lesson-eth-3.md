@@ -1,4 +1,4 @@
-### What's a Smart Contract?  
+## What's a Smart Contract?  
 
 Think of a smart contract as code that gets executed on the Ethereum blockchain but there's more... One of the best definitions of a smart contract is from the Solidity documentation. 
 
