@@ -1,6 +1,6 @@
 See a typo or think you can explain a concept better?You're welcome to work and make edits to our material. 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -28,6 +28,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/ArkyTech-Inc"><img src="https://avatars.githubusercontent.com/u/39137642?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Arky</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3AArkyTech-Inc" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://www.behance.net/venkatsai3"><img src="https://avatars.githubusercontent.com/u/60128586?v=4?s=100" width="100px;" alt=""/><br /><sub><b>P Venkat Sai</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3Avenkatsai6" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://bandism.net/"><img src="https://avatars.githubusercontent.com/u/22633385?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ikko Ashimine</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3Aeltociear" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/Atique-7"><img src="https://avatars.githubusercontent.com/u/80064685?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ATIQUE KHAN</b></sub></a><br /><a href="https://github.com/CadenaDev/courses/issues?q=author%3AAtique-7" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
