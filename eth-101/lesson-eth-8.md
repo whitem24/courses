@@ -27,6 +27,7 @@ function App() {
 
   const contractAddress = '0xf333875f89B62AA14e7E009114B707ae1ED3830b';
   const contractABI = abi.abi;
+  const {ethereum} = window;
   
   ....Get Completed File Here: [https://gist.github.com/saeedjabbar/a4d6d341f54613050e9726bacb265e79]
 ```
@@ -79,8 +80,8 @@ You can use a library like [Web3Modal](https://github.com/Web3Modal/web3modal) t
 ```javascript
 const checkIfWalletIsConnected = async () => {
   try {
-    if (window.ethereum) {
-      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+    if (ethereum) {
+      const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
       const account = accounts[0];
       setIsWalletConnected(true);
       setCustomerAddress(account);
@@ -95,37 +96,26 @@ const checkIfWalletIsConnected = async () => {
 }
 ```
 
-Ethereum wallets usually come in the form of browser extensions and when installed they will inject a global variable called ethereum into the window object. On `line 3` we check if ethereum is in the window object (window.ethereum) which means a wallet is likely present. On `line 4` we're making a request to get an array of metamask accounts and `line 5` we're grabbing the first account at index 0, which is the current connected account. On `line 6` we set our wallet is connected to true, which will render the web3 functionalities of our dapp that we gated. Then on `line 7` we store the current connected address in state.
+Ethereum wallets usually come in the form of browser extensions and when installed they will inject a global variable called ethereum into the window object. On `line 3` we check if ethereum is in the window object (ethereum) which means a wallet is likely present. On `line 4` we're making a request to get an array of metamask accounts and `line 5` we're grabbing the first account at index 0, which is the current connected account. On `line 6` we set our wallet is connected to true, which will render the web3 functionalities of our dapp that we gated. Then on `line 7` we store the current connected address in state.
 
 `checkIfWalletIsConnected()` is being loaded as soon as our app loads via the useEffect() hook at line [179](https://gist.github.com/saeedjabbar/a4d6d341f54613050e9726bacb265e79#file-app-js-L179).  You can read more details about this process in the official MetaMask [docs](https://docs.metamask.io/guide/getting-started.html#basic-considerations).
 
 ## Getter Functions
 
 ```javascript
-const getBankName = async () => {
-  try {
-    if (window.ethereum) {
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
-      const signer = provider.getSigner();
-      const bankContract = new ethers.Contract(contractAddress, contractABI, signer);
 
-      let bankName = await bankContract.bankName();
-      bankName = utils.parseBytes32String(bankName);
-      setCurrentBankName(bankName.toString());
-    } else {
-      console.log("Ethereum object not found, install Metamask.");
-      setError("Please install a MetaMask wallet to use our bank.");
-    }
-  } catch (error) {
-    console.log(error);
+const getContract = (ethereum) => {
+    const provider = ethers.providers.Web3Provider(ethereum);
+    const signer = provider.getSigner();
+    const bankContract = new ethers.Contract(contractAddress, contractABI, signer);
+    return bankContract;
   }
-}
-```
 
-Now let's look at the first of our getter functions. Remember calling a getter fuction is free (it costs no gas), since it's read only. Again we're checking if the ethereum object is present at `line 3`. Let's break down lines 4 through 9, these are important. 
+```
+Before we check our first getter function let's see the getContract function. Let's break down line by line. 
 
 ```javascript
-const provider = new ethers.providers.Web3Provider(window.ethereum);
+const provider = new ethers.providers.Web3Provider(ethereum);
 ```
 
 A provider lets us connect to the ethereum blockchain, in this case the Rinkeby testnet via an ethereum node. We're using MetaMask's provider which uses [Infura](https://infura.io/) behind the scenes. You can read more about providers [here](https://docs.ethers.io/v5/api/providers/#:~:text=A%20Provider%20is%20an%20abstraction,to%20standard%20Ethereum%20node%20functionality.). It's important to know providers that can only complete read-only actions.
@@ -142,7 +132,27 @@ Now with our provider we get a signer which is an abtraction of your MetaMask wa
 const bankContract = new ethers.Contract(contractAddress, contractABI, signer);
 ```
 
-Next we get our contract using our contract address, the ABI file, and a signer.
+Next we get our contract using our contract address, the ABI file, and a signer. 
+
+```javascript
+
+const getBankName = async () => {
+  try {
+    if (ethereum) {
+      const bankContract = getContract(ethereum);
+      let bankName = await bankContract.bankName();
+      bankName = utils.parseBytes32String(bankName);
+      setCurrentBankName(bankName.toString());
+    } else {
+      console.log("Ethereum object not found, install Metamask.");
+      setError("Please install a MetaMask wallet to use our bank.");
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+```
+Now let's look at the first of our getter functions. Remember calling a getter fuction is free (it costs no gas), since it's read only. Again we're checking if the ethereum object is present at `line 3`. Let's break down lines 5 through 7.
 
 ```javascript
 let bankName = await bankContract.bankName();
@@ -160,10 +170,8 @@ We then get the name of our bank by calling the public bankName variable we had 
 const setBankNameHandler = async (event) => {
     event.preventDefault();
     try {
-      if (window.ethereum) {
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-        const signer = provider.getSigner();
-        const bankContract = new ethers.Contract(contractAddress, contractABI, signer);
+      if (ethereum) {
+        const bankContract = getContract(ethereum);
 
         const txn = await bankContract.setBankName(utils.formatBytes32String(inputValue.bankName));
         console.log("Setting Bank Name...");
@@ -202,15 +210,13 @@ Next lets look at the `getBankOwnerHandler()` function. I will be skipping the r
 ```javascript
   const getbankOwnerHandler = async () => {
     try {
-      if (window.ethereum) {
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-        const signer = provider.getSigner();
-        const bankContract = new ethers.Contract(contractAddress, contractABI, signer);
-
+      if (ethereum) {
+        const bankContract = getContract(ethereum);
+        
         let owner = await bankContract.bankOwner();
         setBankOwnerAddress(owner);
 
-        const [account] = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        const [account] = await ethereum.request({ method: 'eth_requestAccounts' });
 
         if (owner.toLowerCase() === account.toLowerCase()) {
           setIsBankerOwner(true);
@@ -229,7 +235,7 @@ Next lets look at the `getBankOwnerHandler()` function. I will be skipping the r
 let owner = await bankContract.bankOwner();
 setBankOwnerAddress(owner);
 
-const [account] = await window.ethereum.request({ method: 'eth_requestAccounts' });
+const [account] = await ethereum.request({ method: 'eth_requestAccounts' });
 
 if (owner.toLowerCase() === account.toLowerCase()) {
   setIsBankerOwner(true);
@@ -243,10 +249,8 @@ In `line 1` we're calling our contract to get the address of the bank owner, rem
 ```javascript
   const customerBalanceHandler = async () => {
     try {
-      if (window.ethereum) {
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-        const signer = provider.getSigner();
-        const bankContract = new ethers.Contract(contractAddress, contractABI, signer);
+      if (ethereum) {
+        const bankContract = getContract(ethereum);
 
         let balance = await bankContract.getCustomerBalance();
         setCustomerTotalBalance(utils.formatEther(balance));
@@ -270,10 +274,8 @@ To get the balance we're calling the getCustomerBalance() function in our smart 
   const deposityMoneyHandler = async (event) => {
     try {
       event.preventDefault();
-      if (window.ethereum) {
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-        const signer = provider.getSigner();
-        const bankContract = new ethers.Contract(contractAddress, contractABI, signer);
+      if (ethereum) {
+        const bankContract = getContract(ethereum);
 
         const txn = await bankContract.depositMoney({ value: ethers.utils.parseEther(inputValue.deposit) });
         console.log("Deposting money...");
@@ -304,10 +306,8 @@ We're depositing money into our contract. As usual with a transaction function i
   const withDrawMoneyHandler = async (event) => {
     try {
       event.preventDefault();
-      if (window.ethereum) {
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-        const signer = provider.getSigner();
-        const bankContract = new ethers.Contract(contractAddress, contractABI, signer);
+      if (ethereum) {
+        const bankContract = getContract(ethereum);
 
         let myAddress = await signer.getAddress()
         console.log("provider signer...", myAddress);
