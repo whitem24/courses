@@ -108,8 +108,8 @@ const getContract = (ethereum) => {
     const provider = ethers.providers.Web3Provider(ethereum);
     const signer = provider.getSigner();
     const bankContract = new ethers.Contract(contractAddress, contractABI, signer);
-    return bankContract;
-  }
+    return {bankContract, signer}
+}
 
 ```
 Before we check our first getter function let's see the getContract function. Let's break down line by line. 
@@ -139,7 +139,7 @@ Next we get our contract using our contract address, the ABI file, and a signer.
 const getBankName = async () => {
   try {
     if (ethereum) {
-      const bankContract = getContract(ethereum);
+      const {bankContract} = getContract(ethereum);
       let bankName = await bankContract.bankName();
       bankName = utils.parseBytes32String(bankName);
       setCurrentBankName(bankName.toString());
@@ -171,7 +171,7 @@ const setBankNameHandler = async (event) => {
     event.preventDefault();
     try {
       if (ethereum) {
-        const bankContract = getContract(ethereum);
+        const {bankContract} = getContract(ethereum);
 
         const txn = await bankContract.setBankName(utils.formatBytes32String(inputValue.bankName));
         console.log("Setting Bank Name...");
@@ -211,7 +211,7 @@ Next lets look at the `getBankOwnerHandler()` function. I will be skipping the r
   const getbankOwnerHandler = async () => {
     try {
       if (ethereum) {
-        const bankContract = getContract(ethereum);
+        const {bankContract} = getContract(ethereum);
         
         let owner = await bankContract.bankOwner();
         setBankOwnerAddress(owner);
@@ -250,7 +250,7 @@ In `line 1` we're calling our contract to get the address of the bank owner, rem
   const customerBalanceHandler = async () => {
     try {
       if (ethereum) {
-        const bankContract = getContract(ethereum);
+        const {bankContract} = getContract(ethereum);
 
         let balance = await bankContract.getCustomerBalance();
         setCustomerTotalBalance(utils.formatEther(balance));
@@ -275,7 +275,7 @@ To get the balance we're calling the getCustomerBalance() function in our smart 
     try {
       event.preventDefault();
       if (ethereum) {
-        const bankContract = getContract(ethereum);
+        const {bankContract} = getContract(ethereum);
 
         const txn = await bankContract.depositMoney({ value: ethers.utils.parseEther(inputValue.deposit) });
         console.log("Deposting money...");
@@ -307,7 +307,7 @@ We're depositing money into our contract. As usual with a transaction function i
     try {
       event.preventDefault();
       if (ethereum) {
-        const bankContract = getContract(ethereum);
+        const {bankContract,signer} = getContract(ethereum);
 
         let myAddress = await signer.getAddress()
         console.log("provider signer...", myAddress);
